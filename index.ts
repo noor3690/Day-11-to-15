@@ -1,48 +1,17 @@
-// qno # 41
-let magicians : string[] = ['Rubab', 'Iqra', 'Fareeha Api'];
-function showMagicians( magicians : string[]) {
-    magicians.forEach(magician => {
-        console.log(magician);
-    });
+// Ques # 34
+let pizzas : string [] = ['Pepproni', 'Range' , 'creamy tikka']
+pizzas.forEach(pizza => {
+    console.log(`I like ${pizza} pizza.`)
+});
+console.log('I really love pizza!');
+// Ques # 35 
+let animals : string[] = ['Dog', 'Cat', 'Parrot'];
+animals.forEach(animal => {
+    console.log(`A ${animal} would make a great pet.`)
+});
+console.log('Any of these animals would make a great pet!');
+// Ques # 36
+function shirt(size : string , message : string){
+    console.log(`Making a ${size} t-shirt with the message '${message}' printed on it.`);
 }
-showMagicians(magicians);
-
-
-// Ques #43
-let magician : string[] = ['Rubab', 'Iqra', 'Fareeha Api'];
-function make_great(magician : string[]) {
-    let greatmagicians = [];
-    for (let i=0; i < magicians.length; i++) {
-        greatmagicians.push(`${magician} the Great`);
-    };
-    return greatmagicians;
-}
- 
-let greatmagicians = make_great(magicians.slice());
-console.log(`Original magicians: `);
-showMagicians(magicians);
-console.log(`Great magicians : ` );
-showMagicians(greatmagicians);
-
-// QNO #44
-function sandwich (...items : string[]) {
-console.log(` Sandwich order : `)
-for (let i =0; i< items.length; i++){
-    console.log (`${items[i]}`)
-}
-}
-console.log(`Enjoy your sandwich Maham`)
-sandwich(' capsicum', 'tomato', 'chicken');
-sandwich(' garlic chicken', 'mayo sauce')
-
-//  Ques # 45
-function cars(manufacture : string , modelName : string, ...extraOption: { [key : string] :  any } []): object{
-    let carinfo = {
-        manufacture,
-       modelName,
-       ...Object .assign({}, ...extraOption)
-    }
-    return carinfo;
-};
-let answer = cars('Honda', 'Civic', {color : 'Black'}, {features : ['navigation', 'Power window']})
-console.log(answer)
+shirt('medium', 'I love mama');
